@@ -1,0 +1,20 @@
+{
+  "name": "stress-mohr-backend",
+  "version": "1.0.0",
+  "description": "平面应力旋转与莫尔圆主方向核验后端（教学用，TypeScript + Node.js + SQLite）",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/cli.js serve",
+    "demo": "node dist/cli.js demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
