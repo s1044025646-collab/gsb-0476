@@ -1,0 +1,22 @@
+{
+  "name": "plane-stress-mohr",
+  "version": "1.0.0",
+  "description": "平面应力旋转与莫尔圆主方向核验后端（教学用，面内限定）",
+  "type": "commonjs",
+  "main": "dist/src/server.js",
+  "bin": {
+    "stress": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "dev": "ts-node src/server.ts",
+    "test": "tsc -p tsconfig.json && node --test dist/test/stress.test.js",
+    "demo": "tsc -p tsconfig.json && node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.9.0"
+  }
+}
